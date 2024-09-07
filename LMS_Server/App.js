@@ -4,9 +4,10 @@ import bodyParser from "body-parser";
 import {config} from "dotenv";
 import ErrorMiddleware from "./Middlewares/Error.js";
 import cookieParser from "cookie-parser";
-config ({
-    path:"./Config/config.env"
-})
+
+config({
+    path:"./Config/config.env",
+});
 import cors from "cors";
 
 const app = express();
