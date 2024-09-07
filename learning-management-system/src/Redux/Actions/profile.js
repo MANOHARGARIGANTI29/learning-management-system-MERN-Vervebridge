@@ -4,7 +4,6 @@ import axios from 'axios';
 export const updateProfile = (name, email) => async dispatch => {
   try {
     dispatch({ type: 'updateProfileRequest' });
-
     const { data } = await axios.put(
       `${server}/updateprofile`,
       {
